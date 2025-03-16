@@ -48,10 +48,10 @@ Os modelos foram avaliados usando as métricas:
 
 ### Estrutura do Repositório
 ```
-📦 FASE-05-PREVISÃO-SAFRA
-│── crop_yield.csv           # Base de dados original
-│── DiegoVeiga_RM560658_Fase5_Cap1.ipynb  # Notebook Jupyter com código do projeto
-│── README.md                # Documentação do projeto
+ FASE-05-PREVISÃO-SAFRA
+│── crop_yield.csv                           # Base de dados original
+│── DiegoVeiga_RM560658_Fase5_Cap1.ipynb     # Notebook Jupyter com código do projeto
+│── README.md                                # Documentação do projeto
 ```
 ### **Instalação das Dependências**
 Certifique-se de ter instalado todas as bibliotecas necessárias:
