@@ -66,5 +66,7 @@ jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
 
 ## Vídeo Demonstrativo
 O vídeo explicando a execução do projeto pode ser acessado no link abaixo:
+https://youtu.be/FghNpQzfdVk
+
 
 
