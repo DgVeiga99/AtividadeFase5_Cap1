@@ -45,26 +45,26 @@ Os modelos foram avaliados usando as métricas:
 - **Coeficiente de Determinação (`R²`)**: Mede o quão bem o modelo explica a variabilidade dos dados.
 
 ## Como Executar o Código
-### ** Instalação das Dependências**
-Certifique-se de ter instalado todas as bibliotecas necessárias:
-```sh
-pip install pandas seaborn matplotlib scikit-learn
-```
 
-### ** Executar no Jupyter Notebook**
-```sh
-jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
-```
-
-## Estrutura do Repositório
+### Estrutura do Repositório
 ```
 📦 FASE-05-PREVISÃO-SAFRA
 │── crop_yield.csv           # Base de dados original
 │── DiegoVeiga_RM560658_Fase5_Cap1.ipynb  # Notebook Jupyter com código do projeto
 │── README.md                # Documentação do projeto
 ```
+### **Instalação das Dependências**
+Certifique-se de ter instalado todas as bibliotecas necessárias:
+```sh
+pip install pandas seaborn matplotlib scikit-learn
+```
+
+### **Executar no Jupyter Notebook**
+```sh
+jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
+```
 
 ## Vídeo Demonstrativo
-O vídeo explicando a execução do projeto pode ser acessado [**neste link do YouTube**](#).
+O vídeo explicando a execução do projeto pode ser acessado no link abaixo:
 
 
