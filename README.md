@@ -1,92 +1,75 @@
-# FASE-05 - Previsão de Rendimento de Safra
+# 🌱 Previsão de Rendimento de Safra com Machine Learning
 
-## **📌 Descrição do Projeto**
-Este projeto visa a previsão do rendimento agrícola de uma fazenda de médio porte (200 hectares), utilizando **Machine Learning** e técnicas de análise de dados. 
+## 📌 Descrição do Projeto
+Este projeto tem como objetivo prever o rendimento agrícola de diferentes culturas com base em condições climáticas e do solo. 
+Utilizando **Machine Learning**, aplicamos **métodos de regressão supervisionada** para realizar previsões precisas a partir dos dados fornecidos.
 
-Através do estudo das condições climáticas e de solo, realizamos:
-- **Análise exploratória dos dados** para entender padrões e correlações.
-- **Clusterização** para identificar agrupamentos e outliers nas amostras.
-- **Modelagem preditiva** para estimar o rendimento da safra com diferentes algoritmos.
+## 📊 Dataset Utilizado
+O dataset **crop_yield.csv** contém os seguintes atributos:
 
-O objetivo é desenvolver um modelo robusto que ajude a fazenda a prever a produtividade das culturas e otimizar suas decisões agrícolas.
+- **Cultura**: Tipo de plantação.
+- **Precipitação (mm/dia)**: Quantidade de chuva diária.
+- **Umidade Específica (g/kg)** e **Umidade Relativa (%)**.
+- **Temperatura (°C)**: Temperatura a 2 metros acima do solo.
+- **Rendimento (kg/ha)**: Quantidade de colheita por hectare (variável alvo).
 
----
+## ⚙️ Tecnologias e Modelos Utilizados
+O projeto foi desenvolvido em **Python** utilizando as bibliotecas:
+- `pandas`, `seaborn`, `matplotlib` para análise exploratória de dados.
+- `scikit-learn` para modelagem preditiva.
 
-## **📂 Estrutura do Código**
-O projeto está organizado conforme descrito abaixo:
+### **Modelos de Regressão Utilizados**
+- **K-Nearest Neighbors (`KNeighborsRegressor`)** - Algoritmo baseado na proximidade entre pontos.
+- **Regressão Linear (`LinearRegression`)** - Modelo base simples para regressão.
+- **Suporte a Vetores (`SVR`)** - Modelo baseado em margens de suporte.
+- **Árvore de Decisão (`DecisionTreeRegressor`)** - Algoritmo baseado em regras de decisão.
+- **Random Forest (`RandomForestRegressor`)** - Conjunto de múltiplas árvores para previsões mais robustas.
 
-### 1️⃣ **Importação de Bibliotecas**
-- `pandas`, `seaborn`, `matplotlib` para manipulação e visualização dos dados.
-- `scikit-learn` para pré-processamento, clusterização e modelos de Machine Learning.
+## 🔍 Etapas do Processo
+1️⃣ **Pré-processamento dos dados**:  
+- Tratamento de valores ausentes e dados duplicados.  
+- Normalização das variáveis preditoras com `MinMaxScaler()`.  
 
-### 2️⃣ **Carregamento do Dataset**
-- O dataset `crop_yield.csv` contém as seguintes variáveis:
-  - **Cultura**: Tipo de plantação.
-  - **Precipitação (mm/dia)**: Quantidade de chuva diária.
-  - **Umidade Específica (g/kg)** e **Umidade Relativa (%)**.
-  - **Temperatura (°C)**.
-  - **Rendimento (kg/ha)**: Quantidade de colheita por hectare.
+2️⃣ **Exploração dos dados**:  
+- Análise estatística e visualização com `seaborn` e `matplotlib`.  
+- Matriz de correlação para identificar relações entre variáveis.  
 
-### 3️⃣ **Análise Exploratória**
-- Identificação de correlações entre variáveis.
-- Visualizações para detectar padrões e possíveis anomalias.
+3️⃣ **Treinamento dos Modelos**:  
+- Separação do dataset em treino e teste (80/20).  
+- Aplicação dos modelos de Machine Learning.  
 
-### 4️⃣ **Clusterização**
-- **K-Means**: Identificação de agrupamentos nas culturas.
-- **DBSCAN**: Detecção de outliers.
+4️⃣ **Avaliação dos Modelos**:  
+Os modelos foram avaliados usando as métricas:
+- **Erro Absoluto Médio (`MAE`)**: Média da diferença entre os valores reais e previstos.
+- **Erro Quadrático Médio (`MSE`)**: Penaliza erros maiores para melhorar previsões.
+- **Coeficiente de Determinação (`R²`)**: Mede o quão bem o modelo explica a variabilidade dos dados.
 
-### 5️⃣ **Modelagem Preditiva**
-Foram testados **cinco modelos** para prever o rendimento agrícola:
-- **Regressão Linear (`LinearRegression`)**
-- **Árvore de Decisão (`DecisionTreeRegressor`)**
-- **Random Forest (`RandomForestRegressor`)**
-- **SVR - Máquina de Vetores de Suporte (`SVR`)**
-- **Gradient Boosting (`GradientBoostingRegressor`)**
-
-Os modelos foram avaliados utilizando as métricas:
-- **MAE (Mean Absolute Error)** → Quanto menor, melhor.
-- **MSE (Mean Squared Error)** → Penaliza erros maiores, menor é melhor.
-- **R² (Coeficiente de Determinação)** → Indica o quão bem o modelo explica a variação da variável alvo (quanto mais próximo de 1, melhor).
-
----
-
-## **📊 Resultados Obtidos**
-Após a análise dos modelos, os resultados indicam que:
-- O modelo **(melhor modelo identificado aqui)** teve a maior precisão.
-- A clusterização revelou padrões interessantes nos rendimentos das culturas.
-- A previsão pode auxiliar na **tomada de decisões agrícolas estratégicas**.
-
----
-
-## **🚀 Como Executar o Código**
-### **Pré-requisitos**
-1. **Python 3.8+** instalado.
-2. Instalar as dependências:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-### **Executar no Jupyter Notebook**
+## 🚀 Como Executar o Código
+### **1️⃣ Instalação das Dependências**
+Certifique-se de ter instalado todas as bibliotecas necessárias:
 ```sh
-jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1_Corrigido.ipynb
+pip install pandas seaborn matplotlib scikit-learn
 ```
 
----
+### **2️⃣ Executar no Jupyter Notebook**
+```sh
+jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
+```
 
-## **📹 Vídeo Demonstrativo**
-O vídeo explicativo do projeto pode ser acessado [**neste link do YouTube**](#).
-
----
-
-## **📁 Estrutura do Repositório**
+## 📁 Estrutura do Repositório
 ```
 📦 FASE-05-PREVISÃO-SAFRA
 │── crop_yield.csv           # Base de dados original
-│── DiegoVeiga_RM560658_Fase5_Cap1_Corrigido.ipynb  # Notebook corrigido com o código final
+│── DiegoVeiga_RM560658_Fase5_Cap1.ipynb  # Notebook Jupyter com código do projeto
 │── README.md                # Documentação do projeto
-│── requirements.txt         # Lista de dependências para executar o código
 ```
+
+## 📹 Vídeo Demonstrativo
+O vídeo explicando a execução do projeto pode ser acessado [**neste link do YouTube**](#).
 
 ---
 
-Caso tenha dúvidas ou sugestões, entre em contato! 🚀
+**Autor:** *Diego Nunes Veiga*  
+**Curso:** Tecnólogo em Inteligência Artificial - FIAP  
+
+📌 *Projeto desenvolvido como parte da Fase 5 da FIAP - Modelagem de Dados com Regressão Supervisionada.*
