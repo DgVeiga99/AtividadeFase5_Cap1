@@ -35,7 +35,7 @@ O projeto foi desenvolvido em **Python** utilizando as bibliotecas:
 - Matriz de correlação para identificar relações entre variáveis.  
 
  **Treinamento dos Modelos**:  
-- Separação do dataset em treino e teste (80/20).  
+- Separação do dataset em treino (30%) e teste (30%).  
 - Aplicação dos modelos de Machine Learning.  
 
  **Avaliação dos Modelos**:  
