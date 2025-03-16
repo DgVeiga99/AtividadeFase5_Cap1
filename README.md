@@ -1,10 +1,10 @@
-# 🌱 Previsão de Rendimento de Safra com Machine Learning
+# Previsão de Rendimento de Safra com Machine Learning
 
-## 📌 Descrição do Projeto
+## Descrição do Projeto
 Este projeto tem como objetivo prever o rendimento agrícola de diferentes culturas com base em condições climáticas e do solo. 
 Utilizando **Machine Learning**, aplicamos **métodos de regressão supervisionada** para realizar previsões precisas a partir dos dados fornecidos.
 
-## 📊 Dataset Utilizado
+## Dataset Utilizado
 O dataset **crop_yield.csv** contém os seguintes atributos:
 
 - **Cultura**: Tipo de plantação.
@@ -13,7 +13,7 @@ O dataset **crop_yield.csv** contém os seguintes atributos:
 - **Temperatura (°C)**: Temperatura a 2 metros acima do solo.
 - **Rendimento (kg/ha)**: Quantidade de colheita por hectare (variável alvo).
 
-## ⚙️ Tecnologias e Modelos Utilizados
+## Tecnologias e Modelos Utilizados
 O projeto foi desenvolvido em **Python** utilizando as bibliotecas:
 - `pandas`, `seaborn`, `matplotlib` para análise exploratória de dados.
 - `scikit-learn` para modelagem preditiva.
@@ -25,38 +25,38 @@ O projeto foi desenvolvido em **Python** utilizando as bibliotecas:
 - **Árvore de Decisão (`DecisionTreeRegressor`)** - Algoritmo baseado em regras de decisão.
 - **Random Forest (`RandomForestRegressor`)** - Conjunto de múltiplas árvores para previsões mais robustas.
 
-## 🔍 Etapas do Processo
-1️⃣ **Pré-processamento dos dados**:  
+## Etapas do Processo
+ **Pré-processamento dos dados**:  
 - Tratamento de valores ausentes e dados duplicados.  
 - Normalização das variáveis preditoras com `MinMaxScaler()`.  
 
-2️⃣ **Exploração dos dados**:  
+ **Exploração dos dados**:  
 - Análise estatística e visualização com `seaborn` e `matplotlib`.  
 - Matriz de correlação para identificar relações entre variáveis.  
 
-3️⃣ **Treinamento dos Modelos**:  
+ **Treinamento dos Modelos**:  
 - Separação do dataset em treino e teste (80/20).  
 - Aplicação dos modelos de Machine Learning.  
 
-4️⃣ **Avaliação dos Modelos**:  
+ **Avaliação dos Modelos**:  
 Os modelos foram avaliados usando as métricas:
 - **Erro Absoluto Médio (`MAE`)**: Média da diferença entre os valores reais e previstos.
 - **Erro Quadrático Médio (`MSE`)**: Penaliza erros maiores para melhorar previsões.
 - **Coeficiente de Determinação (`R²`)**: Mede o quão bem o modelo explica a variabilidade dos dados.
 
-## 🚀 Como Executar o Código
-### **1️⃣ Instalação das Dependências**
+## Como Executar o Código
+### ** Instalação das Dependências**
 Certifique-se de ter instalado todas as bibliotecas necessárias:
 ```sh
 pip install pandas seaborn matplotlib scikit-learn
 ```
 
-### **2️⃣ Executar no Jupyter Notebook**
+### ** Executar no Jupyter Notebook**
 ```sh
 jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
 ```
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 ```
 📦 FASE-05-PREVISÃO-SAFRA
 │── crop_yield.csv           # Base de dados original
@@ -64,12 +64,7 @@ jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
 │── README.md                # Documentação do projeto
 ```
 
-## 📹 Vídeo Demonstrativo
+## Vídeo Demonstrativo
 O vídeo explicando a execução do projeto pode ser acessado [**neste link do YouTube**](#).
 
----
 
-**Autor:** *Diego Nunes Veiga*  
-**Curso:** Tecnólogo em Inteligência Artificial - FIAP  
-
-📌 *Projeto desenvolvido como parte da Fase 5 da FIAP - Modelagem de Dados com Regressão Supervisionada.*
