@@ -81,18 +81,20 @@ Os detalhes das estimativas podem ser encontrados nos arquivos dentro da pasta `
 | **Virgínia (EUA)** | **Windows** | **60,42** | **725,04** |
 
 ### **Justificativa Técnica**
+A escolha da infraestrutura para hospedagem da API e execução do modelo de Machine Learning deve considerar tanto o **custo financeiro** quanto aspectos **técnicos e legais**.
+
 #### **Escolha ideal para menor custo:**
 - **Região:** Virgínia do Norte (EUA)  
 - **Sistema Operacional:** Linux  
-- **Motivo:** Menor custo mensal e anual comparado a todas as outras opções.  
+- **Motivo:** A opção de hospedagem nos Estados Unidos oferece um custo significativamente menor devido à maior infraestrutura da AWS na região e à alta competitividade do mercado. Isso permite reduzir custos operacionais sem impactar a performance do serviço. Para empresas que não possuem restrições regulatórias, essa é a alternativa mais viável financeiramente.
 
 #### **Escolha ideal para conformidade com a LGPD:**
 - **Região:** São Paulo (Brasil)  
 - **Sistema Operacional:** Linux  
-- **Motivo:** Exigência legal para armazenamento de dados no Brasil.
+- **Motivo:** A Lei Geral de Proteção de Dados (LGPD) impõe restrições quanto ao armazenamento e processamento de dados sensíveis fora do país. Se a aplicação lida com informações que exigem conformidade com essas regulamentações, a opção de São Paulo se torna a melhor alternativa, apesar do custo mais elevado. Além disso, a hospedagem local pode proporcionar menor latência no acesso aos dados, resultando em maior eficiência e melhor experiência do usuário final.
 
 #### **Escolha alternativa para compatibilidade com sistemas específicos:**
-- **Windows Server** deve ser escolhido apenas se houver necessidade específica de compatibilidade com aplicações que não rodam em Linux.
+- **Windows Server** deve ser escolhido apenas se houver necessidade específica de compatibilidade com aplicações que não rodam em Linux. Esse sistema pode ser essencial para softwares empresariais proprietários ou aplicações que dependem de tecnologias da Microsoft, mas a diferença de custo pode impactar significativamente o orçamento.
 
 ### **Vídeo Demonstrativo**
 O vídeo explicando a análise de custos da AWS pode ser acessado no link abaixo:
