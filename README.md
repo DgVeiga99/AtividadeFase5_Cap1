@@ -58,7 +58,7 @@ jupyter notebook DiegoVeiga_RM560658_Fase5_Cap1.ipynb
 
 ### **Vídeo Demonstrativo**
 O vídeo explicando a execução do código pode ser acessado no link abaixo:
-[Vídeo da Parte 1](https://youtu.be/seu-video-aqui)
+[Vídeo da Parte 1](https://youtu.be/JL6MPsu09io)
 
 ---
 
