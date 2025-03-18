@@ -97,5 +97,5 @@ A escolha da infraestrutura para hospedagem da API e execução do modelo de Mac
 - **Windows Server** deve ser escolhido apenas se houver necessidade específica de compatibilidade com aplicações que não rodam em Linux. Esse sistema pode ser essencial para softwares empresariais proprietários ou aplicações que dependem de tecnologias da Microsoft, mas a diferença de custo pode impactar significativamente o orçamento.
 
 ### **Vídeo Demonstrativo**
-O vídeo explicando a análise de custos da AWS pode ser acessado no link abaixo:
-[Vídeo da Parte 2](https://youtu.be/seu-video-aqui)
+O vídeo apresentando a calculadora da AWS pode ser acessado no link abaixo:
+[Vídeo da Parte 2](https://youtu.be/XWOVIXWogJM)
